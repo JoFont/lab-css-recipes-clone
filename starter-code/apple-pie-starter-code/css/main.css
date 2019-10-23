@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
 
+
+:root {
+    --c-gray-1: rgb(90, 90, 90);
+}
+
 body {
     margin: 0;
+    color: var(--c-gray-1);
 }
 
 .articles {
@@ -49,4 +55,33 @@ article > header > h1 {
 
 article > main {
     padding: 3rem;
+}
+
+article .description {
+    text-align: center;
+    border-bottom: solid 2px var(--c-gray-1);
+}
+
+.description img {
+    max-width: 50%;
+}
+
+.ingredients {
+    border-bottom: solid 2px var(--c-gray-1);
+}
+
+.in-img {
+    text-align: center;
+}
+
+.ingredients img {
+    max-width: 50%;
+}
+
+.ingredients li {
+    list-style-type: none;
+}
+
+.ingredients li:before {
+    content: "- ";
 }
